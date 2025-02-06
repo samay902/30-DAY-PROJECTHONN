@@ -1,4 +1,5 @@
 from sklearn.preprocessing import StandardScaler
+import sklearn as sk
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import OneHotEncoder
@@ -11,3 +12,4 @@ col_trans=ColumnTransformer([
 ("num",num_pipeline,num_atr),
 ("cat",cat_pipeline,cat_atr),
 ])
+print(sk.__version__)
