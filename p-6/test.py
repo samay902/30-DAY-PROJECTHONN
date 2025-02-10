@@ -13,3 +13,4 @@ col_trans=ColumnTransformer([
 ("cat",cat_pipeline,cat_atr),
 ])
 print(sk.__version__)
+sorted(zip(rand_))
